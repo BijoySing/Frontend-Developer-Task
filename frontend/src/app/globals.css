@@ -121,3 +121,6 @@
     @apply bg-background text-foreground;
   }
 }
+html {
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif !important;
+}

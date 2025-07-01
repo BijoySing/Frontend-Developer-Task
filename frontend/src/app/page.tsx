@@ -1,12 +1,19 @@
+import Hero from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
-
+import HotelInfo from "@/components/HotelInfo";
+import Availability from "@/components/Availability";
 export default function Home() {
   return (
     <>
+
       <Navbar />
-      <main className="pt-16"> {/* padding top to avoid overlap */}
-        {/* other sections here */}
+      <main className="w-[1108px] mx-auto"> {/* padding top to avoid overlap */}
+        <Hero />
+        <HotelInfo />
+        <Availability />
+
       </main>
+      
     </>
   );
 }
