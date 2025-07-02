@@ -1,8 +1,9 @@
 // src/components/ui/badge.tsx
 import React from "react";
 
-interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {}
-
+export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
+  className?: string;
+}
 export function Badge({ className = "", ...props }: BadgeProps) {
   return (
     <span

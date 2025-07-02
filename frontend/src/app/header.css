@@ -1,0 +1,85 @@
+@media (max-width: 768px) {
+  /* Hero Section wrapper */
+  section {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+
+  /* Title + Reserve Row */
+  section > div > .flex:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  section h1 {
+    font-size: 1.25rem !important;
+  }
+
+  section p {
+    font-size: 0.95rem !important;
+  }
+
+  /* Icons (Bookmark, Share, Reserve) */
+  section .flex.items-center {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Image Grid Top Row */
+  section .flex.gap-1:first-of-type {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  section .flex.gap-1:first-of-type > div:first-child {
+    width: 100% !important;
+    height: 200px !important;
+    position: relative !important;
+  }
+
+  section .flex.gap-1:first-of-type > div:first-child img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  section .flex.gap-1:first-of-type > div:last-child {
+    flex-direction: row !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+  }
+
+  section .flex.gap-1:first-of-type > div:last-child > div {
+    flex: 1 1 50% !important;
+    height: 100px !important;
+    position: relative;
+  }
+
+  section .flex.gap-1:first-of-type > div:last-child img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Bottom Grid (hero-4 to hero-9) */
+  section > div > div:last-child {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    margin-top: 1rem;
+  }
+
+  section > div > div:last-child > div {
+    width: 48% !important;
+    height: 120px !important;
+    position: relative;
+  }
+
+  section > div > div:last-child img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}

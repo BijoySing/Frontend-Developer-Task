@@ -1,60 +1,45 @@
 'use client';
 
+import { ArrowRight, Bookmark } from 'lucide-react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { Heart, Share2 } from 'lucide-react';
 import React from 'react';
-import { DM_Sans } from "next/font/google";
+  
 
-const dmSans = DM_Sans({
-    subsets: ["latin"],
-    weight: ["400", "500", "700"],
-    variable: "--font-dm-sans",
-});
+ 
 
 export default function HeroSection() {
     return (
-        <section className="w-[1108px] bg-[#FFFFFF] text-gray-800 pt-8 pb-10 px-4 md:px-16">
+        <section className="hero-section w-[1108px] bg-[#FFFFFF] text-gray-800 pt-8 pb-10 px-4 md:px-16">
             <div className="w-[1010px] mx-auto">
                 {/* Title and actions */}
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-6">
-                    <div>
-                        <h1 className="text-3xl md:text-4xl font-bold">El Aurassi Hotel</h1>
-                        <p className="text-lg text-[#626262] mt-1">
+                    <div className="flex flex-col ">
+                        <h1 className="text-2xl text-gray-900 md:text-2xl font">El Aurassi Hotel</h1>
+                        <p className="text-md text-[#626262] mt-1">
                             Spacious, modern rooms with panoramic views of the<br></br> Mediterranean Sea.
                         </p>
                     </div>
                     <div className="flex items-center ">
                         <div className='cursor-pointer rounded-full px-5 py-4'>
-                            <Image
-                                src="/images/Book.png"
-                                alt="Hotel image"
-                                width={70}
-                                height={70}
-                                className="rounded-full"
-
-                            />
+                            <Bookmark className="w-[50px] h-[50px] p-2 rounded-full bg-[#e5f0f7] text-[#0c82d1]" />
                         </div>
                         <div className='cursor-pointer rounded-full px-5 py-4'>
                             <Image
                                 src="/images/group_share_light.png"
                                 alt="Hotel image"
-                                width={70}
-                                height={70}
+                                width={50}
+                                height={50}
                                 className="rounded-full"
 
                             />
                         </div>
-                        <div className='cursor-pointer'>
-                            <Image
-                                src="/images/reserve.png"
-                                alt="Hotel image"
-                                width={163}
-                                height={46}
-                                className="rounded-full"
+                        <div className=' cursor-pointer'>
+                           <button className="flex gap-1 rounded-4xl p-2 bg-[#007DD0] hover:bg-blue-700 text-white font-medium py-2 px-4  transition-colors">
+                                Reserve
+                                                            <ArrowRight></ArrowRight>
 
-                            />
-                        </div>
+                            </button>
+                      </div>
 
                     </div>
                 </div>

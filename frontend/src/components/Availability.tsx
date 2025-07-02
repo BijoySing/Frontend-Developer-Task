@@ -1,37 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Calendar, User, CheckCircle, Wifi, Snowflake, Building, Search, Home, Bed } from 'lucide-react';
+import { Calendar, User, Wifi,  Search, Home} from 'lucide-react';
 import Image from "next/image";
 
-const roomTypes = [
-    {
-        name: 'Twin Room',
-        size: '1200 sqft',
-        bedInfo: '2 single beds',
-        bathroom: '1 bathroom',
-        amenities: ['Wi-Fi', 'Air Condition', 'Bathroom,TV'],
-        // guests: '2 Adults, 1 Child',
-        price: '282',
-        currency: 'USD',
-        included: 'Breakfast included',
-        available: 'Only 4 rooms left',
-        cancellation: 'Free cancellation',
-    }
-];
 
-const getAmenityIcon = (amenity) => {
-    switch (amenity.toLowerCase()) {
-        case 'wi-fi':
-            return <Wifi className="w-3 h-3" />;
-        case 'air conditioning':
-            return <Snowflake className="w-3 h-3" />;
-        case 'balcony':
-            return <Building className="w-3 h-3" />;
-        default:
-            return null;
-    }
-};
 
 const Availability = () => {
     const [checkIn] = useState("Tue, 23 June 2024");
@@ -192,7 +165,7 @@ const Availability = () => {
                         <div className="col-span-2 border-r border-[#8bbbdb] pr-4 pt-2">
                             <div className="space-y-1">
                                 <div className="text-xl font-bold text-gray-900">
-                                    USD 282
+                                    $ 282
                                 </div>
                                
                                
@@ -320,7 +293,7 @@ const Availability = () => {
                     <div className="col-span-2 border-r border-[#8bbbdb] pr-4 pt-2">
                         <div className="space-y-1">
                             <div className="text-xl font-bold text-gray-900">
-                                USD 282
+                                $ 282
                             </div>
                         </div>
                     </div>
@@ -441,7 +414,7 @@ const Availability = () => {
                     <div className="col-span-2 border-r border-b border-[#8bbbdb] pr-4 pt-2">
                         <div className="space-y-1">
                             <div className="text-xl font-bold text-gray-900">
-                                USD 282
+                                $ 282
                             </div>
                         </div>
                     </div>

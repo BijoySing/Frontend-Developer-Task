@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
-import { Star, User, Bath, Maximize, Info, Warehouse } from 'lucide-react';
+import { Navigation } from 'swiper/modules';
+import { Star,  Bath, Maximize, Info, Warehouse } from 'lucide-react';
 import Image from 'next/image';
 
 import 'swiper/css';
@@ -89,7 +89,6 @@ const YouMayAlsoLike: React.FC = () => {
         bedrooms,
         bathrooms,
         area,
-        image,
 }: {
         name: string;
       desc: string;
@@ -98,7 +97,6 @@ const YouMayAlsoLike: React.FC = () => {
       bedrooms: number;
       bathrooms: number;
       area: string;
-      image: string;
 }) => (
       <div className=" border-gray-00 rounded-lg overflow-hidden mb-4">
         <div className="relative h-[180px] bg-gray-00">

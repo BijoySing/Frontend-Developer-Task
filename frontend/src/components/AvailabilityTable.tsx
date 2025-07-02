@@ -9,7 +9,7 @@ const roomTypes = [
     amenities: ['Wi-Fi', 'Air Conditioning', 'Balcony'],
     guests: '2 Adults, 1 Child',
     price: '282',
-    currency: 'USD',
+    currency: '$',
     included: 'Breakfast included',
     available: 'Only 4 rooms left',
     cancellation: 'Free cancellation',
@@ -22,7 +22,7 @@ const roomTypes = [
     amenities: ['Wi-Fi', 'Air Conditioning', 'Balcony'],
     guests: '2 Adults, 1 Child', 
     price: '382',
-    currency: 'USD',
+    currency: '$',
     included: 'Breakfast included',
     available: 'Only 2 rooms left',
     cancellation: 'Free cancellation',
@@ -35,14 +35,14 @@ const roomTypes = [
     amenities: ['Wi-Fi', 'Air Conditioning', 'Balcony'],
     guests: '2 Adults, 1 Child',
     price: '482',
-    currency: 'USD', 
+    currency: '$', 
     included: 'Breakfast included',
     available: 'Only 1 room left',
     cancellation: 'Free cancellation',
   }
 ];
 
-const getAmenityIcon = (amenity) => {
+const getAmenityIcon = (amenity: string) => {
   switch (amenity.toLowerCase()) {
     case 'wi-fi':
       return <Wifi className="w-3 h-3" />;

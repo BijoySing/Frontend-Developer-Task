@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
-import { ArrowLeft, ChevronLeft, ChevronRight, Star } from "lucide-react";
+// import React, { useState } from "react";
+import { ArrowLeft, Star } from "lucide-react";
 import { ArrowRight } from "lucide-react";
-import { Calendar, CreditCard, Users, Baby, Ban, Wallet } from "lucide-react";
-
+ 
 interface Review {
     title: string;
     content: string;
@@ -15,8 +14,7 @@ interface Review {
 }
 
 const GuestReviews: React.FC = () => {
-    const [currentReview, setCurrentReview] = useState(0);
-
+  
     const reviews: Review[] = [
         {
             title: "Breathtaking Views and Luxury Comfort!",
@@ -36,13 +34,13 @@ const GuestReviews: React.FC = () => {
         }
     ];
 
-    const nextReview = () => {
-        setCurrentReview((prev) => (prev + 1) % reviews.length);
-    };
+    // const nextReview = () => {
+    //     setCurrentReview((prev) => (prev + 1) % reviews.length);
+    // };
 
-    const prevReview = () => {
-        setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
-    };
+    // const prevReview = () => {
+    //     setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
+    // };
 
     return (
         <div className="max-w-[1008px] mx-auto px-4 py-6 space-y-8 font-sans">
@@ -70,14 +68,14 @@ const GuestReviews: React.FC = () => {
                 <div className="relative">
                     {/* Navigation Arrows */}
                     <button
-                        onClick={prevReview}
+                        // onClick={prevReview}
                         // className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md border border-gray-200 hover:bg-gray-50"
                     >
                         {/* <ChevronLeft className="w-5 h-5 text-gray-600" /> */}
                     </button>
 
                     <button
-                        onClick={nextReview}
+                        // onClick={nextReview}
                         // className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md border border-gray-200 hover:bg-gray-50"
                     >
                         {/* <ChevronRight className="w-5 h-5 text-gray-600" /> */}
@@ -87,7 +85,7 @@ const GuestReviews: React.FC = () => {
                     <div className="flex gap-6 overflow-hidden">
                         {/* First Review Card */}
                         <div className="flex-1 bg-white border border-gray-200 rounded-lg p-6">
-                            <h3 className="text-[16px] font-bold text-black mb-3">"{reviews[0].title}"</h3>
+                            <h3 className="text-[16px] font-bold text-black mb-3">{reviews[0].title}</h3>
                             <p className="text-[10px] text-gray-500 leading-relaxed mb-4 line-clamp-4">
                                 {reviews[0].content}
                             </p>
@@ -111,7 +109,7 @@ const GuestReviews: React.FC = () => {
 
                         {/* Second Review Card */}
                         <div className="flex-1 bg-white border border-gray-200 rounded-lg p-6">
-                            <h3 className="text-[16px] font-bold text-black mb-3">"{reviews[1].title}"</h3>
+                            <h3 className="text-[16px] font-bold text-black mb-3">{reviews[1].title}</h3>
                             <p className="text-[10px] text-gray-500 leading-relaxed mb-4 line-clamp-4">
                                 {reviews[1].content}
                             </p>
@@ -150,7 +148,7 @@ const GuestReviews: React.FC = () => {
                         <div className="flex-1 text-sm text-gray-600 ">
                             <p className="text-sm text-gray-800 font-semibold">Available 24 hours</p>
 
-                            <p>Guests are required to show a photo identification and credit card upon check-in. You'll need to let the property know in advance what time you'll arrive.</p>
+                            <p>Guests are required to show a photo identification and credit card upon check-in. You will need to let the property know in advance what time you will arrive.</p>
                         </div>
                     </div>
 

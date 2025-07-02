@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin, Utensils, ShoppingBag, Umbrella, Train } from 'lucide-react';
+import {  Utensils, ShoppingBag, Umbrella, Train } from 'lucide-react';
 import Image from 'next/image';
 
 export default function AboutProperty() {
