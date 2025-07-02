@@ -26,11 +26,11 @@ export default function AboutProperty() {
                 <div className="flex grid grid-cols-1 sm:grid-cols-2 gap-1 text-sm text-gray-800">
                     {/* Restaurants */}
                     <div className="mr-8">
-                        <div className="flex items-center font-semibold mb-2">
+                        <div className=" text-gray-800 flex items-center font mb-2">
                             <Utensils className="w-4 h-4 mr-2" />
                             Restaurants & cafes
                         </div>
-                        <ul className="space-y-1 text-sm text-gray-600">
+                        <ul className="space-y-1 text-xs text-gray-500">
                             <li className="flex justify-between">
                                 <span>Blue Cafe</span>
                                 <span>1.4 km</span>
@@ -49,11 +49,11 @@ export default function AboutProperty() {
 
                     {/* Shops */}
                     <div>
-                        <div className="flex items-center font-semibold mb-2">
+                        <div className="flex items-center font text-gray-800 mb-2">
                             <ShoppingBag className="w-4 h-4 mr-2" />
                             Shops & Markets
                         </div>
-                        <ul className="space-y-1 text-sm text-gray-500">
+                        <ul className="space-y-1 text-xs     text-gray-500">
                             <li className="flex justify-between">
                                 <span>Central Mall</span>
                                 <span>1.4 km</span>
@@ -72,11 +72,11 @@ export default function AboutProperty() {
 
                     {/* Beaches */}
                     <div className="mr-8">
-                        <div className="flex items-center font-semibold mb-2">
+                        <div className="flex items-center font text-gray-800 mb-2">
                             <Umbrella className="w-4 h-4 mr-2" />
                             Beaches
                         </div>
-                        <ul className="space-y-1 text-sm text-gray-500">
+                        <ul className="space-y-1 text-xs text-gray-500">
                             <li className="flex justify-between">
                                 <span>Les Dunes Beach</span>
                                 <span>1.4 km</span>
@@ -94,12 +94,12 @@ export default function AboutProperty() {
                     </div>
 
                     {/* Transport */}
-                    <div className="ml-2">
-                        <div className="flex items-center font-semibold mb-2">
+                    <div className="ml-">
+                        <div className="flex items-center font text-gray-800 mb-2">
                             <Train className="w-4 h-4 mr-2" />
                             Public transport
                         </div>
-                        <ul className="space-y-1 text-sm text-gray-500">
+                        <ul className="space-y-1 text-xs text-gray-500">
                             <li className="flex justify-between">
                                 <span>Train — Riverdale Central Station</span>
                                 <span>1.4 km</span>
@@ -118,7 +118,7 @@ export default function AboutProperty() {
                 </div>
 
                 {/* Right side: Map and button */}
-                <div className="flex-shrink-0 w-full lg:w-[450px] ml-4 rounded-xl overflow-hidden ">
+                <div className="flex-shrink-0 w-full lg:w-[500px] ml-4 rounded-xl overflow-hidden shadow-lg ">
                     <div className="relative w-full h-[200px]">
                         <Image
                             src="/images/map.png" // Replace with actual map image

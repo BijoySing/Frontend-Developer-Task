@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { Calendar, CreditCard, Users, Baby, Ban, Wallet } from "lucide-react";
 
@@ -20,15 +20,15 @@ const GuestReviews: React.FC = () => {
     const reviews: Review[] = [
         {
             title: "Breathtaking Views and Luxury Comfort!",
-            content: "The Executive Suite exceeded all our expectations! The panoramic views of the Mediterranean Sea were absolutely stunning. The staff was attentive and professional, making our stay truly memorable. The amenities were top-notch and the breakfast was exceptional.",
-            author: "Sofia B.",
+            content: "The Executive Suite exceeded all my expectations! The panoramic views of the Mediterranean Sea were absolutely stunning. The suite was spacious, immaculately clean, and the modern decor made me feel right at home. The bathroom was luxurious, and the amenities provided were top-notch. Perfect for both work and relaxation!",
+             author: "Sofia B.",    
             location: "France",
             rating: 5,
             date: "Jul 18, 2024"
         },
         {
             title: "Exceptional Stay with Excellent Amenities",
-            content: "This Executive Suite provided an exceptional experience. The suite was spacious and well-appointed with excellent views. The service, bathroom, and breakfast were all superb. The location was perfect for exploring the city while enjoying luxury.",
+            content: "The Executive Suite provided an exceptional experience. The room was spotless, elegantly designed, and equipped with everything you could need. The marble bathroom with its bathtub and walk-in shower was pure luxury. The location is perfect for exploring the city, and the staff truly makes you feel welcome.",
             author: "Youssef H.",
             location: "Morocco",
             rating: 5,
@@ -51,9 +51,13 @@ const GuestReviews: React.FC = () => {
                 <div className="mb-4">
                     <h2 className="text-[18px] font-semibold text-black">What Our Guests Say</h2>
                     <div className="flex items-center  justify-between gap-2">
-                        <button className="text-[#0066CC] text-[14px] ">
-                            <ArrowRight className="p-2 w-10 h-8 ml-12 bg-blue-100 rounded-2xl text-blue-400 " />
+                       <div className=" flex justify-center mt-2 mb-0"> <button className="text-[#0066CC] text-[14px] ">
+                            <ArrowLeft className="p-2 w-10 h-10 ml-12 bg-gray-100 rounded-2xl text-gray-400  " />
                         </button>
+                                                <button className="text-[#0066CC] text-[14px] ">
+                            <ArrowRight className="p-2 w-10 h-10 ml-2 bg-blue-100 rounded-2xl text-blue-400 " />
+                        </button>
+                        </div>
                         <button className="text-[#0066CC] text-[14px] hover:underline flex items-center gap-1 border-b border-[#0066CC]">
                             <div className="flex items-center gap-1 border-b  border-[#0066CC]">
                             </div >
@@ -83,8 +87,8 @@ const GuestReviews: React.FC = () => {
                     <div className="flex gap-6 overflow-hidden">
                         {/* First Review Card */}
                         <div className="flex-1 bg-white border border-gray-200 rounded-lg p-6">
-                            <h3 className="text-[16px] font-medium text-black mb-3">"{reviews[0].title}"</h3>
-                            <p className="text-[14px] text-gray-700 leading-relaxed mb-4 line-clamp-4">
+                            <h3 className="text-[16px] font-bold text-black mb-3">"{reviews[0].title}"</h3>
+                            <p className="text-[10px] text-gray-500 leading-relaxed mb-4 line-clamp-4">
                                 {reviews[0].content}
                             </p>
 
@@ -107,8 +111,8 @@ const GuestReviews: React.FC = () => {
 
                         {/* Second Review Card */}
                         <div className="flex-1 bg-white border border-gray-200 rounded-lg p-6">
-                            <h3 className="text-[16px] font-medium text-black mb-3">"{reviews[1].title}"</h3>
-                            <p className="text-[14px] text-gray-700 leading-relaxed mb-4 line-clamp-4">
+                            <h3 className="text-[16px] font-bold text-black mb-3">"{reviews[1].title}"</h3>
+                            <p className="text-[10px] text-gray-500 leading-relaxed mb-4 line-clamp-4">
                                 {reviews[1].content}
                             </p>
 

@@ -103,9 +103,9 @@ const Availability = () => {
                         <div className="col-span-3 border-r border-[#568eb3] pr-4">
                             <div className="space-y-2">
                                 <h3 className="font-semibold text-[#007DD0]">Twin Room</h3>
-                                <div className="text-sm text-gray-600">
-                                <div className="text-sm text-gray-600 gap-1">
-                                    <div className="flex items-center gap-1" >
+                                <div className="text-xs text-gray-600">
+                                <div className="text-xs text-gray-600 gap-1">
+                                    <div className="flex items-center gap-1 mb-1" >
                                         <p>2 single beds</p>
                                         <Image
                                             src="/images/bed.png"
@@ -122,7 +122,7 @@ const Availability = () => {
                                             height={16}
                                         />
                                     </div>
-                                    <div>
+                                    <div className=" text-xs mb-1">
                                         <Image
                                             src="/images/door.png"
                                             alt="Bathroom"
@@ -138,7 +138,7 @@ const Availability = () => {
                                             width={16}
                                             height={16}
                                         />
-                                        <span className="ml-1">1200 sqft</span>
+                                        <span className="ml-1 text-xs">1200 sqft</span>
 
                                     </div>
                                     <div>
@@ -149,7 +149,7 @@ const Availability = () => {
                                             width={16}
                                             height={16}
                                         />
-                                        <span className="ml-0 mr-1 text-sm my-1">Air Condition</span>
+                                        <span className="ml-0 mr-1 text-xs mb-1">Air Condition</span>
                                         <Image
                                             src="/images/bath.png"
                                             alt="Air Condition"
@@ -157,7 +157,7 @@ const Availability = () => {
                                             width={16}
                                             height={16}
                                         />
-                                        <span className="ml-0">Bathroom</span>
+                                        <span className="ml-0 text-xs ">Bathroom</span>
                                     </div>
 
                                    
@@ -170,11 +170,11 @@ const Availability = () => {
                                         width={16}
                                         height={16}
                                     />
-                                    <span className="text-sm text-gray-600">TV</span>
+                                    <span className="text-xs text-gray-600">TV</span>
                                     </div>
-                                    <div className="flex items-center gap-1 text-xs text-gray-600  px-2 py-1 rounded">
+                                    <div className="flex items-center gap-1 text-xs text-gray-600  px-2 py-0 rounded">
                                         <Wifi className="w-4 h-4" />
-                                        <span>Wi-Fi</span>
+                                        <span className="text-xs">Wi-Fi</span>
                                     </div>
                                     
                                 </div>
@@ -211,7 +211,7 @@ const Availability = () => {
                         </div>
                         {/* Select Rooms */}
                         <div className="col-span-2 border-r border-[#8bbbdb] pt-2">
-                            <select className="rounded-full border bg-gray-100 border-gray-300  px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <select className="rounded-full border bg-gray-000 border-gray-00  px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                                 <option value="1">0 </option>
                                 <option value="2">1 </option>
                                 <option value="3">2 </option>
@@ -229,81 +229,86 @@ const Availability = () => {
                 <div className="grid grid-cols-12 gap-4 px-6 py-2 hover:bg-gray-50 transition-colors border-b border-[#8bbbdb]">
                     {/* Room Type */}
                     <div className="col-span-3 border-r border-[#568eb3] pr-4">
-                        <div className="space-y-2">
-                            <h3 className="font-semibold text-[#007DD0]">Deluxe Double Room </h3>
-                            <div className="text-sm text-gray-600 gap-1">
-                                <div className="flex items-center gap-1" >
-                                    <p>2 single beds</p>
-                                    <Image
-                                        src="/images/bed.png"
-                                        alt="Bed"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <Image
-                                        src="/images/bed.png"
-                                        alt="Bed"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
+                            <div className="space-y-2">
+                                <h3 className="font-semibold text-[#007DD0]">Twin Room</h3>
+                                <div className="text-xs text-gray-600">
+                                <div className="text-xs text-gray-600 gap-1">
+                                    <div className="flex items-center gap-1 mb-1" >
+                                        <p>2 single beds</p>
+                                        <Image
+                                            src="/images/bed.png"
+                                            alt="Bed"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <Image
+                                            src="/images/bed.png"
+                                            alt="Bed"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
+                                    <div className=" text-xs mb-1">
+                                        <Image
+                                            src="/images/door.png"
+                                            alt="Bathroom"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        Room
+                                          <Image
+                                            src="/images/ft.png"
+                                            alt="Bathroom"
+                                            className="w-4 h-4 inline-block mr- ml-3"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <span className="ml-1 text-xs">1200 sqft</span>
+
+                                    </div>
+                                    <div>
+                                        <Image
+                                            src="/images/acc.png"
+                                            alt="Floor Area"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <span className="ml-0 mr-1 text-xs mb-1">Air Condition</span>
+                                        <Image
+                                            src="/images/bath.png"
+                                            alt="Air Condition"
+                                            className="w-4 h-4 inline-block ml-3 mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <span className="ml-0 text-xs ">Bathroom</span>
+                                    </div>
+
+                                   
                                 </div>
-                                <div>
-                                    <Image
-                                        src="/images/door.png"
-                                        alt="Bathroom"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    Room
-                                    <Image
-                                        src="/images/ft.png"
-                                        alt="Bathroom"
-                                        className="w-4 h-4 inline-block mr- ml-3"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <span className="ml-1">1200 sqft</span>
-                                </div>
-                                <div>
-                                    <Image
-                                        src="/images/acc.png"
-                                        alt="Floor Area"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <span className="ml-0 mr-1 text-sm my-1">Air Condition</span>
-                                    <Image
-                                        src="/images/bath.png"
-                                        alt="Air Condition"
-                                        className="w-4 h-4 inline-block ml-3 mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <span className="ml-0">Bathroom</span>
-                                </div>
-                            </div>
-                            <div className="flex justify-between gap-2 mt-1">
-                                <div>
-                                    <Image
+                                <div className="flex justify-between gap-2 mt-1">
+                                   <div> <Image
                                         src="/images/tv.png"
                                         alt="Wi-Fi"
                                         className="w-4 h-4 inline-block mr-1"
                                         width={16}
                                         height={16}
                                     />
-                                    <span className="text-sm text-gray-600">TV</span>
-                                </div>
-                                <div className="flex items-center gap-1 text-xs text-gray-600  px-2 py-1 rounded">
-                                    <Wifi className="w-4 h-4" />
-                                    <span>Wi-Fi</span>
+                                    <span className="text-xs text-gray-600">TV</span>
+                                    </div>
+                                    <div className="flex items-center gap-1 text-xs text-gray-600  px-2 py-0 rounded">
+                                        <Wifi className="w-4 h-4" />
+                                        <span className="text-xs">Wi-Fi</span>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        </div>
                     {/* Number of Guests */}
                     <div className="col-span-2 border-r border-[#8bbbdb] pr-4 flex items-start pt-2">
                         <div className="flex items-center text-sm text-gray-700">
@@ -332,7 +337,7 @@ const Availability = () => {
                     </div>
                     {/* Select Rooms */}
                     <div className="col-span-2 border- border-[#8bbbdb] pt-2">
-                        <select className=" border bg-gray-100 border-gray-300 rounded-2xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <select className=" border bg-gray-00 border-gray-00 rounded-2xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <option value="1">0 </option>
                             <option value="2">1 </option>
                             <option value="3">2 </option>
@@ -344,82 +349,87 @@ const Availability = () => {
                 {/* Row 3 */}
                 <div className="grid grid-cols-12 gap-4 px-6 py-2 hover:bg-gray-50 transition-colors border-b border-[#8bbbdb]">
                     {/* Room Type */}
-                    <div className="col-span-3 border-b border-r border-[#568eb3] pr-4">
-                        <div className="space-y-2">
-                            <h3 className="font-semibold text-[#007DD0]">Deluxe Double Room </h3>
-                            <div className="text-sm text-gray-600 gap-1">
-                                <div className="flex items-center gap-1" >
-                                    <p>2 single beds</p>
-                                    <Image
-                                        src="/images/bed.png"
-                                        alt="Bed"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <Image
-                                        src="/images/bed.png"
-                                        alt="Bed"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
+                    <div className="col-span-3 border-r border-[#568eb3] pr-4">
+                            <div className="space-y-2">
+                                <h3 className="font-semibold text-[#007DD0]">Twin Room</h3>
+                                <div className="text-xs text-gray-600">
+                                <div className="text-xs text-gray-600 gap-1">
+                                    <div className="flex items-center gap-1 mb-1" >
+                                        <p>2 single beds</p>
+                                        <Image
+                                            src="/images/bed.png"
+                                            alt="Bed"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <Image
+                                            src="/images/bed.png"
+                                            alt="Bed"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                    </div>
+                                    <div className=" text-xs mb-1">
+                                        <Image
+                                            src="/images/door.png"
+                                            alt="Bathroom"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        Room
+                                          <Image
+                                            src="/images/ft.png"
+                                            alt="Bathroom"
+                                            className="w-4 h-4 inline-block mr- ml-3"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <span className="ml-1 text-xs">1200 sqft</span>
+
+                                    </div>
+                                    <div>
+                                        <Image
+                                            src="/images/acc.png"
+                                            alt="Floor Area"
+                                            className="w-4 h-4 inline-block mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <span className="ml-0 mr-1 text-xs mb-1">Air Condition</span>
+                                        <Image
+                                            src="/images/bath.png"
+                                            alt="Air Condition"
+                                            className="w-4 h-4 inline-block ml-3 mr-1"
+                                            width={16}
+                                            height={16}
+                                        />
+                                        <span className="ml-0 text-xs ">Bathroom</span>
+                                    </div>
+
+                                   
                                 </div>
-                                <div>
-                                    <Image
-                                        src="/images/door.png"
-                                        alt="Bathroom"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    Room
-                                    <Image
-                                        src="/images/ft.png"
-                                        alt="Bathroom"
-                                        className="w-4 h-4 inline-block mr- ml-3"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <span className="ml-1">1200 sqft</span>
-                                </div>
-                                <div>
-                                    <Image
-                                        src="/images/acc.png"
-                                        alt="Floor Area"
-                                        className="w-4 h-4 inline-block mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <span className="ml-0 mr-1 text-sm my-1">Air Condition</span>
-                                    <Image
-                                        src="/images/bath.png"
-                                        alt="Air Condition"
-                                        className="w-4 h-4 inline-block ml-3 mr-1"
-                                        width={16}
-                                        height={16}
-                                    />
-                                    <span className="ml-0">Bathroom</span>
-                                </div>
-                            </div>
-                            <div className="flex justify-between gap-2 mt-1">
-                                <div>
-                                    <Image
+                                <div className="flex justify-between gap-2 mt-1">
+                                   <div> <Image
                                         src="/images/tv.png"
                                         alt="Wi-Fi"
                                         className="w-4 h-4 inline-block mr-1"
                                         width={16}
                                         height={16}
                                     />
-                                    <span className="text-sm text-gray-600">TV</span>
-                                </div>
-                                <div className="flex items-center gap-1 text-xs text-gray-600  px-2 py-1 rounded">
-                                    <Wifi className="w-4 h-4" />
-                                    <span>Wi-Fi</span>
+                                    <span className="text-xs text-gray-600">TV</span>
+                                    </div>
+                                    <div className="flex items-center gap-1 text-xs text-gray-600  px-2 py-0 rounded">
+                                        <Wifi className="w-4 h-4" />
+                                        <span className="text-xs">Wi-Fi</span>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        </div>
                     {/* Number of Guests */}
                     <div className="col-span-2 border-r border-b border-[#8bbbdb] pr-4 flex items-start pt-2">
                         <div className="flex items-center text-sm text-gray-700">
@@ -448,7 +458,7 @@ const Availability = () => {
                     </div>
                     {/* Select Rooms */}
                     <div className="col-span-2 border-b border-[#8bbbdb] pt-2">
-                        <select className="bg-gray-100 border border-gray-300 rounded-2xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <select className="bg-gray-00 border border-gray-300 rounded-2xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <option value="1">0 </option>
                             <option value="2">1 </option>
                             <option value="3">2 </option>

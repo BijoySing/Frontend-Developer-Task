@@ -19,7 +19,7 @@ export default function Navbar() {
         // Apply the font className here for global font on navbar
         <header
 
-        className={`${dmSans.className} w-[1280px] h-[76px] mb-0 mx-auto  top-0 bg-[#E9F6FF] z-50 border-b text-[#626262] rounded-t-4xl`}
+        className={`${dmSans.className} w-[1150px] h-[76px] mb-0 mx-auto  top-0 bg-[#E9F6FF] z-50 border-b text-[#626262] rounded-t-4xl`}
         >
              <div className="w-[1108px] h-[76px] mx-auto flex bg-red-00 gap-4 items-center  justify-between px-4 sm:px-6 lg:px-8">
 

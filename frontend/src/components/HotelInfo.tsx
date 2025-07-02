@@ -37,7 +37,7 @@ export default function HotelInfo() {
                             <div className="flex gap-6">
                                 <div>
                                     <h3 className="font-semibold text-lg mb-2">Property Type</h3>
-                                    <div className="flex items-center text-md text-gray-600">
+                                    <div className="flex items-center text-sm text-gray-600">
                                         <Image
                                             src="/images/content.png"
                                             alt="Resort icon"
@@ -51,7 +51,7 @@ export default function HotelInfo() {
 
                                 <div>
                                     <h3 className="font-semibold text-lg mb-2">Size</h3>
-                                    <div className="flex items-center text-md text-gray-600">
+                                    <div className="flex items-center text-sm text-gray-600">
                                         <Image
                                             src="/images/contents.png"
                                             alt="Size icon"
@@ -66,7 +66,7 @@ export default function HotelInfo() {
 
                             <div>
                                 <h3 className="font-semibold text-lg mb-2">Features</h3>
-                                <div className="flex flex-wrap  gap-4 gap-y-2 text-md text-gray-700">
+                                <div className="flex flex-wrap  gap-4 gap-y-2 text-sm text-gray-700">
                                     <div className="flex items-center">
                                         <Image src="/images/wifi.png" alt="Wifi" width={35} height={35} className="mr-2" />
                                         Wifi
